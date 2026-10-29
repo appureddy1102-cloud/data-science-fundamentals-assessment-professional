@@ -1,0 +1,5 @@
+# Synthetic retail dataset
+
+Created specifically for this assessment and released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). It is not real customer or sales data and was not obtained from an outside dataset. A NumPy generator seeded 2026 generated 120 daily transactions from 2025-01-01 to 2025-04-30, with category probabilities Books 0.35, Electronics 0.30, Home 0.35, units from 1 to 6 inclusive, and fixed prices $20, $65, and $35 respectively. Three unit values are missing, one category is formatted ` books `, and two exact duplicate rows are appended to create the 122-row raw file.
+
+Raw columns: sale_id (text identifier), date (ISO date text), category (text), units (number; nullable), unit_price_usd (number, USD). After quality checks, duplicates are removed, category text normalized, missing units filled with category median and rounded to integers, dates parsed, revenue calculated, and a department lookup merged. Revenue is gross, not profit. The simulated dates, fixed prices and artificial generation limit generalization. The small array in the notebook is a separate illustrative statistics example, not a sample from this file.

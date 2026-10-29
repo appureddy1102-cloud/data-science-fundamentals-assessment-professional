@@ -1,0 +1,106 @@
+{
+  "raw_shape": [
+    122,
+    5
+  ],
+  "raw_duplicates": 2,
+  "raw_missing": {
+    "sale_id": 0,
+    "date": 0,
+    "category": 0,
+    "units": 3,
+    "unit_price_usd": 0
+  },
+  "clean_shape": [
+    120,
+    7
+  ],
+  "revenue_total": 16485.0,
+  "revenue_mean": 137.375,
+  "revenue_median": 120.0,
+  "categories": [
+    {
+      "category": "Electronics",
+      "transactions": 46,
+      "units": 143,
+      "revenue_usd": 9295
+    },
+    {
+      "category": "Home",
+      "transactions": 36,
+      "units": 130,
+      "revenue_usd": 4550
+    },
+    {
+      "category": "Books",
+      "transactions": 38,
+      "units": 132,
+      "revenue_usd": 2640
+    }
+  ],
+  "months": [
+    {
+      "month": "2025-01",
+      "revenue": 5160.0
+    },
+    {
+      "month": "2025-02",
+      "revenue": 4120.0
+    },
+    {
+      "month": "2025-03",
+      "revenue": 3355.0
+    },
+    {
+      "month": "2025-04",
+      "revenue": 3850.0
+    }
+  ],
+  "units_price_corr": -0.10706972506791866,
+  "outlier_fences": [
+    -130.0,
+    390.0
+  ],
+  "outlier_count": 0,
+  "stats_example": {
+    "q1": 4.0,
+    "q3": 5.5,
+    "skew": 0.8184875533567997,
+    "se": 0.7559289460184544,
+    "ci": [
+      3.21251208176379,
+      6.787487918236209
+    ],
+    "t": 1.3228756555322954,
+    "t_p": 0.22745281805976297,
+    "chi2": 3.333333333333333,
+    "chi2_p": 0.06788915486182878
+  },
+  "classification": {
+    "tn": 7,
+    "fp": 3,
+    "fn": 2,
+    "tp": 8,
+    "accuracy": 0.75,
+    "precision": 0.7272727272727273,
+    "recall": 0.8,
+    "specificity": 0.7,
+    "f1": 0.7619047619047619,
+    "auc": 0.94
+  },
+  "regression": {
+    "mae": 0.75,
+    "mse": 0.75,
+    "rmse": 0.8660254037844386,
+    "r2": 0.85
+  },
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.6.1"
+  }
+}
